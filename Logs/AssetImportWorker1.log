@@ -1,0 +1,1512 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.43f1 (85497d293fa1) revision 8735101'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 16243 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\unity\2022.3.43f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/projetos/Light in the abyss
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+63579
+Successfully changed project path to: E:/projetos/Light in the abyss
+E:/projetos/Light in the abyss
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [42564]  Target information:
+
+Player connection [42564]  * "[IP] 192.168.0.7 [Port] 0 [Flags] 2 [Guid] 1926723438 [EditorId] 1926723438 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-THV6C8U) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42564]  * "[IP] 26.101.34.64 [Port] 0 [Flags] 2 [Guid] 1926723438 [EditorId] 1926723438 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-THV6C8U) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [42564] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [42564] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 20.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.43f1 (85497d293fa1)
+[Subsystems] Discovering subsystems at path E:/unity/2022.3.43f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/projetos/Light in the abyss/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
+    Vendor:   NVIDIA
+    VRAM:     7971 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'E:/unity/2022.3.43f1/Editor/Data/Managed'
+Mono path[1] = 'E:/unity/2022.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/unity/2022.3.43f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/unity/2022.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010012 seconds.
+- Loaded All Assemblies, in  1.420 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.677 seconds
+Domain Reload Profiling: 2097ms
+	BeginReloadAssembly (596ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (244ms)
+	RebuildNativeTypeToScriptingClass (42ms)
+	initialDomainReloadingComplete (162ms)
+	LoadAllAssembliesAndSetupDomain (376ms)
+		LoadAssemblies (593ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (369ms)
+			TypeCache.Refresh (366ms)
+				TypeCache.ScanAssembly (337ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (678ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (578ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (16ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (422ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.496 seconds
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.751 seconds
+Domain Reload Profiling: 3246ms
+	BeginReloadAssembly (433ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (87ms)
+	LoadAllAssembliesAndSetupDomain (864ms)
+		LoadAssemblies (719ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (421ms)
+			TypeCache.Refresh (369ms)
+				TypeCache.ScanAssembly (341ms)
+			ScanForSourceGeneratedMonoScriptInfo (37ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1752ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1424ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (1223ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 13.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (55.5 KB). Loaded Objects now: 3606.
+Memory consumption went from 122.7 MB to 122.7 MB.
+Total: 9.948300 ms (FindLiveObjects: 0.447100 ms CreateObjectMapping: 0.253300 ms MarkObjects: 9.006500 ms  DeleteObjects: 0.238900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 121091.679568 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00029.png
+  artifactKey: Guid(5dc26c098cdf2d34a80f5387eb76568e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00029.png using Guid(5dc26c098cdf2d34a80f5387eb76568e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '98ce12e1b247bc31f2a093130ce8b5c4') in 0.185351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00039.png
+  artifactKey: Guid(3b258e125db4687439868f4d4fe0adb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00039.png using Guid(3b258e125db4687439868f4d4fe0adb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '53ced9c100e48cfd971489eb3fdb3b46') in 0.035110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00037.png
+  artifactKey: Guid(17862c0b160caf74d843943386708a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00037.png using Guid(17862c0b160caf74d843943386708a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bbf1dcc389e03f2927dc2df8fcb523c1') in 0.026705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00018.png
+  artifactKey: Guid(7b49e18e82d1cc54b8e41b585931155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00018.png using Guid(7b49e18e82d1cc54b8e41b585931155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f1eac65021bdd6d687bd7909345ac83f') in 0.029051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00054.png
+  artifactKey: Guid(9e173d58f14061a40b8e38cd7b27d4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00054.png using Guid(9e173d58f14061a40b8e38cd7b27d4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3ac85749a78ba60dfe539d9e6ba4c82e') in 0.031683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00025.png
+  artifactKey: Guid(f2086012bde7ec14ba7c51324f1272cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00025.png using Guid(f2086012bde7ec14ba7c51324f1272cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bb02bad859d487650aaf9eb39f52781e') in 0.029453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00040.png
+  artifactKey: Guid(b3363587752c0964487394383111b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00040.png using Guid(b3363587752c0964487394383111b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b921acdc6a5ee49a4b7c349d7540d16c') in 0.027460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00049.png
+  artifactKey: Guid(f639b62ce29a187408b99cb1cf90f3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00049.png using Guid(f639b62ce29a187408b99cb1cf90f3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8ed0a100715342f3b4b8ce1214ddf70c') in 0.027045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00053.png
+  artifactKey: Guid(342dbac4433da8f4cb11feab6e7c9167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00053.png using Guid(342dbac4433da8f4cb11feab6e7c9167) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0327f5018bbb72584d339c7160cde5f3') in 0.025823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00011.png
+  artifactKey: Guid(c4ea883f3aae20a47871cca1c8c717cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00011.png using Guid(c4ea883f3aae20a47871cca1c8c717cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cd5123d8a000134c6edf09756b000efd') in 0.026145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00047.png
+  artifactKey: Guid(690e88877e3b63f42b9efb605ebe9729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00047.png using Guid(690e88877e3b63f42b9efb605ebe9729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a632d1849f101c88926216175a5c77dc') in 0.029579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00010.png
+  artifactKey: Guid(643f7eaa8609883489536d228fde5648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00010.png using Guid(643f7eaa8609883489536d228fde5648) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '974cb44c22a12b65c7d46ba5aecd250a') in 0.026260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00004.png
+  artifactKey: Guid(ea5228cd1da1f9f4a805b360a14de97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00004.png using Guid(ea5228cd1da1f9f4a805b360a14de97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '096c4e68941cbbe2194a6428ac76d21c') in 0.042349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00009.png
+  artifactKey: Guid(7dd1618a65d77b64bad62e4625f676d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00009.png using Guid(7dd1618a65d77b64bad62e4625f676d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e2bc15b09d1d28f94bf3b6c3fe3cc4a8') in 0.027199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00030.png
+  artifactKey: Guid(6da1a669282631e4a8176d070c4ec021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00030.png using Guid(6da1a669282631e4a8176d070c4ec021) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '70e513d9a06cee63a83288b7a5c38477') in 0.033477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00033.png
+  artifactKey: Guid(f8fee875cabf51e4084b4887c2d1430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00033.png using Guid(f8fee875cabf51e4084b4887c2d1430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b5262496bac2ccdea713eb1a3721c2b8') in 0.034079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00015.png
+  artifactKey: Guid(f880411482b854f409559bc7b9d38d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00015.png using Guid(f880411482b854f409559bc7b9d38d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a15f41385215750f8ac446c53bffe128') in 0.067106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00016.png
+  artifactKey: Guid(7699d5b8a0e331741847dc422be22257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00016.png using Guid(7699d5b8a0e331741847dc422be22257) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c8ef970fd9d143c98fafc64e44239ba2') in 0.034851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00038.png
+  artifactKey: Guid(78959e926903e9247ade35c5fc03b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00038.png using Guid(78959e926903e9247ade35c5fc03b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2a38f3cea2024209a04c6345cb6642b7') in 0.033152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00023.png
+  artifactKey: Guid(624fef0c8a231e1459fcd98ff9e6e487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00023.png using Guid(624fef0c8a231e1459fcd98ff9e6e487) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '666522e3c952053214759b09ce33c8a7') in 0.027689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00045.png
+  artifactKey: Guid(d3e42021fe8b74741966b2a69b1f85e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00045.png using Guid(d3e42021fe8b74741966b2a69b1f85e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '82c2ab63b2feafd2aa4e4cb69633af6f') in 0.029134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00046.png
+  artifactKey: Guid(bc0845d7009bdcf448d48c5a92e1e7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00046.png using Guid(bc0845d7009bdcf448d48c5a92e1e7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3ac98ae229e60aaa15566563d759b91d') in 0.032159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00035.png
+  artifactKey: Guid(9a6f2089a2195794ba13dc8006b24b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00035.png using Guid(9a6f2089a2195794ba13dc8006b24b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd3d6a231ce006eb51f8c0056fa42d377') in 0.039245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00007.png
+  artifactKey: Guid(6aaf54b7a1debe64dbf5b79d83c324ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00007.png using Guid(6aaf54b7a1debe64dbf5b79d83c324ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a0e91523b7fe04346208909b3860ac79') in 0.031862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00006.png
+  artifactKey: Guid(874f5abe5816dcf48a758f4b4f82f930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00006.png using Guid(874f5abe5816dcf48a758f4b4f82f930) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e2727ca130e79ceb80eeedd2de3e009e') in 0.032032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00005.png
+  artifactKey: Guid(567a41e1ba87b284dbf9002239c6b5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00005.png using Guid(567a41e1ba87b284dbf9002239c6b5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '22b6e951ea99c5324394f354d9847731') in 0.037235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00041.png
+  artifactKey: Guid(cf4f33f86bf8fd240a8236004f1845de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00041.png using Guid(cf4f33f86bf8fd240a8236004f1845de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4a3f2574ac4d7bc907fc27e970de6392') in 0.037858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00012.png
+  artifactKey: Guid(3de06a8596f78684589cc895576f74c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00012.png using Guid(3de06a8596f78684589cc895576f74c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5fad1209944d50d82954183c53edb9fa') in 0.034037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 38.312410 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00013.png
+  artifactKey: Guid(8e4ab177155156f42a29f8b501cab36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00013.png using Guid(8e4ab177155156f42a29f8b501cab36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'eaefa40eb3eb6a53b765856119a0c45f') in 0.115174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00039.png
+  artifactKey: Guid(3b258e125db4687439868f4d4fe0adb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00039.png using Guid(3b258e125db4687439868f4d4fe0adb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7532cf21ebc5c3e0ecdd759723876aba') in 0.048948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00037.png
+  artifactKey: Guid(17862c0b160caf74d843943386708a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00037.png using Guid(17862c0b160caf74d843943386708a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '72f2cecca7334accd05345ad75110d70') in 0.034914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00018.png
+  artifactKey: Guid(7b49e18e82d1cc54b8e41b585931155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00018.png using Guid(7b49e18e82d1cc54b8e41b585931155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3e1d382e5a721a7b23731966b3cc9c3a') in 0.033085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00042.png
+  artifactKey: Guid(a7d107caaf1303d46b95c66da33c46cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00042.png using Guid(a7d107caaf1303d46b95c66da33c46cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '16969ed49b295acf76703411f04646c9') in 0.035991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00040.png
+  artifactKey: Guid(b3363587752c0964487394383111b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00040.png using Guid(b3363587752c0964487394383111b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd2c8fef9168b290ac9b31de4d55a9865') in 0.033192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00049.png
+  artifactKey: Guid(f639b62ce29a187408b99cb1cf90f3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00049.png using Guid(f639b62ce29a187408b99cb1cf90f3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2edb334d5f203f53725eac2bf0e0e20e') in 0.035301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00036.png
+  artifactKey: Guid(1dbd7edfd87f07d4aa68c5cd0a9777bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00036.png using Guid(1dbd7edfd87f07d4aa68c5cd0a9777bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '18ee8fe8320ec8963a7d2f35972c6aa5') in 0.029373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00047.png
+  artifactKey: Guid(690e88877e3b63f42b9efb605ebe9729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00047.png using Guid(690e88877e3b63f42b9efb605ebe9729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4fde91c86372c78978a99175a87cd3ff') in 0.028787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00032.png
+  artifactKey: Guid(804def13fe027264c97c830661822c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00032.png using Guid(804def13fe027264c97c830661822c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '31c8e799b7140414c5e717665dc41fb0') in 0.031856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00051.png
+  artifactKey: Guid(8b3994f87b3f9b14e9f39c44cfa0449d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00051.png using Guid(8b3994f87b3f9b14e9f39c44cfa0449d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fe86eda08ebb3c15955812854626c44a') in 0.033018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00050.png
+  artifactKey: Guid(d639efb81da7e4d4aba3e137f93d074a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00050.png using Guid(d639efb81da7e4d4aba3e137f93d074a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '62421033c184e83456930f531682e6a6') in 0.028774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00021.png
+  artifactKey: Guid(d05322234c0c9e943b0982fddaf0fd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00021.png using Guid(d05322234c0c9e943b0982fddaf0fd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'df5cffc741abca1f40cd85ea4f1a60c6') in 0.033256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00038.png
+  artifactKey: Guid(78959e926903e9247ade35c5fc03b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00038.png using Guid(78959e926903e9247ade35c5fc03b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '21ef32d25dcead98667b5022ac560f8b') in 0.031410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00023.png
+  artifactKey: Guid(624fef0c8a231e1459fcd98ff9e6e487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00023.png using Guid(624fef0c8a231e1459fcd98ff9e6e487) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6975b34d5afcbc787cce2519f602fa36') in 0.030609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00034.png
+  artifactKey: Guid(e9c5c06d5656b964c9ec60f1621cc249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00034.png using Guid(e9c5c06d5656b964c9ec60f1621cc249) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dbd41d7516ff06d6881573f09bd896b4') in 0.031143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00043.png
+  artifactKey: Guid(e4407f8fee380ae45be6ede7adf2b842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00043.png using Guid(e4407f8fee380ae45be6ede7adf2b842) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '54ffbcda226e494932317464b7fd897a') in 0.033381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00027.png
+  artifactKey: Guid(c2b37d86ae72f154481ce984f1176a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00027.png using Guid(c2b37d86ae72f154481ce984f1176a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd09b81cdf2cad6f373cee44be60effb9') in 0.030802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00044.png
+  artifactKey: Guid(586a9a53bf93388408028bca07e67ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00044.png using Guid(586a9a53bf93388408028bca07e67ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a132d18df7c65134ad93c4d96958ed87') in 0.028609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00022.png
+  artifactKey: Guid(8a7978731f8906342a04acb2d019d64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00022.png using Guid(8a7978731f8906342a04acb2d019d64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '63bbfb406f483e8f0fe013e9095f4003') in 0.031435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 60.186927 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00028.png
+  artifactKey: Guid(72594f556c9ddd5468c0da4cff51257e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00028.png using Guid(72594f556c9ddd5468c0da4cff51257e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fb37d0e86cfadbeb718dd6e4244c8e19') in 0.037283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00039.png
+  artifactKey: Guid(3b258e125db4687439868f4d4fe0adb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00039.png using Guid(3b258e125db4687439868f4d4fe0adb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cc6965391640b9d5399c1a2ffd8f262e') in 0.041283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00031.png
+  artifactKey: Guid(b53e69b4e51de1442ae5d2f102b1cc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00031.png using Guid(b53e69b4e51de1442ae5d2f102b1cc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1084845bbd9b51d1e497cb577ccc16f9') in 0.041943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00048.png
+  artifactKey: Guid(cf5f9be8d5bf6c542b608c93ad30e374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00048.png using Guid(cf5f9be8d5bf6c542b608c93ad30e374) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e5cf0e624ee2ff2bd86212782e71ba41') in 0.041697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00040.png
+  artifactKey: Guid(b3363587752c0964487394383111b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00040.png using Guid(b3363587752c0964487394383111b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4f61d6b1fccc19d326ca3e0822fd6f85') in 0.032763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00049.png
+  artifactKey: Guid(f639b62ce29a187408b99cb1cf90f3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00049.png using Guid(f639b62ce29a187408b99cb1cf90f3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'acca5344fb819f57328d348e317e8ebc') in 0.031680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00047.png
+  artifactKey: Guid(690e88877e3b63f42b9efb605ebe9729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00047.png using Guid(690e88877e3b63f42b9efb605ebe9729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '260449763b98cdf550cd61a44a56faf5') in 0.033561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00030.png
+  artifactKey: Guid(6da1a669282631e4a8176d070c4ec021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00030.png using Guid(6da1a669282631e4a8176d070c4ec021) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '226385de8142e3521a47b3d047c9e10a') in 0.030827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00051.png
+  artifactKey: Guid(8b3994f87b3f9b14e9f39c44cfa0449d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00051.png using Guid(8b3994f87b3f9b14e9f39c44cfa0449d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7c02cc9d0988cd3eb732d29738c19133') in 0.037622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00038.png
+  artifactKey: Guid(78959e926903e9247ade35c5fc03b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00038.png using Guid(78959e926903e9247ade35c5fc03b18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b79e6460593cade9cea41216a9465eb4') in 0.031032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00045.png
+  artifactKey: Guid(d3e42021fe8b74741966b2a69b1f85e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00045.png using Guid(d3e42021fe8b74741966b2a69b1f85e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dd7249d4f95847f97456c6c473abbdf5') in 0.036290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00043.png
+  artifactKey: Guid(e4407f8fee380ae45be6ede7adf2b842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00043.png using Guid(e4407f8fee380ae45be6ede7adf2b842) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8666a3358249a92bcbb3caf2d623db2b') in 0.028655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00044.png
+  artifactKey: Guid(586a9a53bf93388408028bca07e67ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00044.png using Guid(586a9a53bf93388408028bca07e67ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b8f0ce874e60b04e4b9a6b7469529ce3') in 0.032737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1178.112815 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00001.png
+  artifactKey: Guid(bb9d5c7e46e739f4b83844c51618faf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00001.png using Guid(bb9d5c7e46e739f4b83844c51618faf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a218b21fb0a450d3db59e0776bc3ad80') in 0.048559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00008.png
+  artifactKey: Guid(faf9520f67bfde74e82d4bf9488a67b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00008.png using Guid(faf9520f67bfde74e82d4bf9488a67b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ef598154f5b319d4c8993b03b879e8b1') in 0.037218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00011.png
+  artifactKey: Guid(c4ea883f3aae20a47871cca1c8c717cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00011.png using Guid(c4ea883f3aae20a47871cca1c8c717cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1b029a5fa563abd867627a53fd34ee25') in 0.048963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00004.png
+  artifactKey: Guid(ea5228cd1da1f9f4a805b360a14de97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00004.png using Guid(ea5228cd1da1f9f4a805b360a14de97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '444990e7fb48bcebc4d0a8c8eb6039a4') in 0.033146 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00009.png
+  artifactKey: Guid(7dd1618a65d77b64bad62e4625f676d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00009.png using Guid(7dd1618a65d77b64bad62e4625f676d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'beeb9de9c026ccdc22500f14d65ff80e') in 0.034001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00006.png
+  artifactKey: Guid(874f5abe5816dcf48a758f4b4f82f930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00006.png using Guid(874f5abe5816dcf48a758f4b4f82f930) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e9ccf67aa2e2a9e73d7b0cbc020c8ece') in 0.031291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00012.png
+  artifactKey: Guid(3de06a8596f78684589cc895576f74c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00012.png using Guid(3de06a8596f78684589cc895576f74c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b81b3900f97713b3d3d6e12a51e44e11') in 0.032011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 569.322470 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00000.png
+  artifactKey: Guid(7bb4b3d8c080d864aa5ec6f6dd25ca39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00000.png using Guid(7bb4b3d8c080d864aa5ec6f6dd25ca39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7312b1e497742f577fcb305177837e39') in 0.042340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00018.png
+  artifactKey: Guid(7b49e18e82d1cc54b8e41b585931155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00018.png using Guid(7b49e18e82d1cc54b8e41b585931155d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cca34c1f73e5b0b97d8a3eb1ee93e542') in 0.034060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00002.png
+  artifactKey: Guid(46edb2dd00200fb43b010d447fe12f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00002.png using Guid(46edb2dd00200fb43b010d447fe12f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ff306257095ce89ed1edea7d47535e5d') in 0.038807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00025.png
+  artifactKey: Guid(f2086012bde7ec14ba7c51324f1272cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00025.png using Guid(f2086012bde7ec14ba7c51324f1272cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1de458efe150b4032a52c3255291d7f7') in 0.039404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00017.png
+  artifactKey: Guid(f6348cfd34ca91e4cb33b6a4727be3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00017.png using Guid(f6348cfd34ca91e4cb33b6a4727be3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '48350b361fccd4045ff9d7dc6cdcb724') in 0.035269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00004.png
+  artifactKey: Guid(ea5228cd1da1f9f4a805b360a14de97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00004.png using Guid(ea5228cd1da1f9f4a805b360a14de97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '52b941703f25658197359cd3c6ce5421') in 0.034145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00009.png
+  artifactKey: Guid(7dd1618a65d77b64bad62e4625f676d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00009.png using Guid(7dd1618a65d77b64bad62e4625f676d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7c60b159302e3651c18076ef481bc330') in 0.031988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00015.png
+  artifactKey: Guid(f880411482b854f409559bc7b9d38d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00015.png using Guid(f880411482b854f409559bc7b9d38d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a26352a50f1ecc979ab0afd31f559ce8') in 0.036887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00024.png
+  artifactKey: Guid(a91b9bc59ffc9f34da5a8d5cdc3a16d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00024.png using Guid(a91b9bc59ffc9f34da5a8d5cdc3a16d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7dc076f6048a21688dac70554c87a72c') in 0.037545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00007.png
+  artifactKey: Guid(6aaf54b7a1debe64dbf5b79d83c324ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00007.png using Guid(6aaf54b7a1debe64dbf5b79d83c324ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '20fc3379e29378d1aa99bceec8f14caf') in 0.038037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00005.png
+  artifactKey: Guid(567a41e1ba87b284dbf9002239c6b5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00005.png using Guid(567a41e1ba87b284dbf9002239c6b5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'daf93b572b8e9adc905fd1bb491ca164') in 0.039388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UI/animations/aquabutao/botao foda/botao foda_00022.png
+  artifactKey: Guid(8a7978731f8906342a04acb2d019d64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/animations/aquabutao/botao foda/botao foda_00022.png using Guid(8a7978731f8906342a04acb2d019d64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e54b77acb7e713780fd4db0f08415ab2') in 0.038441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.218 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.858 seconds
+Domain Reload Profiling: 4075ms
+	BeginReloadAssembly (472ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (105ms)
+	RebuildCommonClasses (84ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (570ms)
+		LoadAssemblies (813ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (43ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2859ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1394ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (117ms)
+			ProcessInitializeOnLoadAttributes (1183ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 10.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3615.
+Memory consumption went from 123.0 MB to 123.0 MB.
+Total: 7.510900 ms (FindLiveObjects: 0.372400 ms CreateObjectMapping: 0.245000 ms MarkObjects: 6.808500 ms  DeleteObjects: 0.082500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.808 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.506 seconds
+Domain Reload Profiling: 3313ms
+	BeginReloadAssembly (314ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (352ms)
+		LoadAssemblies (522ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (2507ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1396ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (151ms)
+			ProcessInitializeOnLoadAttributes (1158ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 7.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3618.
+Memory consumption went from 123.3 MB to 123.2 MB.
+Total: 5.798000 ms (FindLiveObjects: 0.336600 ms CreateObjectMapping: 0.262200 ms MarkObjects: 5.129200 ms  DeleteObjects: 0.067500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.830 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.439 seconds
+Domain Reload Profiling: 3270ms
+	BeginReloadAssembly (319ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (367ms)
+		LoadAssemblies (543ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2441ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1284ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (1089ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 7.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3621.
+Memory consumption went from 123.3 MB to 123.2 MB.
+Total: 6.374000 ms (FindLiveObjects: 0.290300 ms CreateObjectMapping: 0.135500 ms MarkObjects: 5.878600 ms  DeleteObjects: 0.067400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.961 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.584 seconds
+Domain Reload Profiling: 3546ms
+	BeginReloadAssembly (360ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (432ms)
+		LoadAssemblies (643ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (26ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (2585ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1445ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (1226ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 8.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3624.
+Memory consumption went from 123.3 MB to 123.2 MB.
+Total: 5.452300 ms (FindLiveObjects: 0.315900 ms CreateObjectMapping: 0.141400 ms MarkObjects: 4.910600 ms  DeleteObjects: 0.082100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.229 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.434 seconds
+Domain Reload Profiling: 7668ms
+	BeginReloadAssembly (457ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (88ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (582ms)
+		LoadAssemblies (764ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (114ms)
+			TypeCache.Refresh (28ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (61ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (6441ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4538ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (192ms)
+			ProcessInitializeOnLoadAttributes (3545ms)
+			ProcessInitializeOnLoadMethodAttributes (766ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
+Refreshing native plugins compatible for Editor in 12.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3628.
+Memory consumption went from 123.3 MB to 123.3 MB.
+Total: 31.532700 ms (FindLiveObjects: 0.437600 ms CreateObjectMapping: 0.685000 ms MarkObjects: 30.322500 ms  DeleteObjects: 0.085000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/anim.cs: 6d3753d9d1988edeac97e823c5ad0289 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 3e58e42e36940d8ca8fa7bc10702985c -> c7b437f1ec0182c72a80303380616fee
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.807 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.344 seconds
+Domain Reload Profiling: 3150ms
+	BeginReloadAssembly (309ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (66ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (359ms)
+		LoadAssemblies (522ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2345ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1305ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (1108ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 5.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.6 KB). Loaded Objects now: 3631.
+Memory consumption went from 123.3 MB to 123.3 MB.
+Total: 5.509200 ms (FindLiveObjects: 0.345200 ms CreateObjectMapping: 0.153400 ms MarkObjects: 4.942300 ms  DeleteObjects: 0.066100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/anim.cs: 6d3753d9d1988edeac97e823c5ad0289 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 3e58e42e36940d8ca8fa7bc10702985c -> c7b437f1ec0182c72a80303380616fee
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.794 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.344 seconds
+Domain Reload Profiling: 3139ms
+	BeginReloadAssembly (310ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (346ms)
+		LoadAssemblies (524ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2345ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1296ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (1102ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 9.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3634.
+Memory consumption went from 123.3 MB to 123.3 MB.
+Total: 6.786100 ms (FindLiveObjects: 0.369300 ms CreateObjectMapping: 0.346300 ms MarkObjects: 5.996800 ms  DeleteObjects: 0.071600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/anim.cs: 6d3753d9d1988edeac97e823c5ad0289 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 3e58e42e36940d8ca8fa7bc10702985c -> c7b437f1ec0182c72a80303380616fee
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.803 seconds
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.418 seconds
+Domain Reload Profiling: 3221ms
+	BeginReloadAssembly (321ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (346ms)
+		LoadAssemblies (532ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (2419ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1294ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (1099ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 8.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3637.
+Memory consumption went from 123.3 MB to 123.3 MB.
+Total: 5.195600 ms (FindLiveObjects: 0.293700 ms CreateObjectMapping: 0.232300 ms MarkObjects: 4.602100 ms  DeleteObjects: 0.065700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/anim.cs: 6d3753d9d1988edeac97e823c5ad0289 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 3e58e42e36940d8ca8fa7bc10702985c -> c7b437f1ec0182c72a80303380616fee
