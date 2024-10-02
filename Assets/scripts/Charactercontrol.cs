@@ -1,113 +1,116 @@
 using UnityEngine;
-using System.Collections; // Adiciona essa diretiva para usar coroutines
 
-[RequireComponent(typeof(CharacterController))]
-public class TopDownMovement : MonoBehaviour
+public class CharacterControl : MonoBehaviour
 {
-    public float moveSpeed = 6f; // Velocidade de movimentação
-    public float rotateSpeed = 720f; // Velocidade de rotação (graus por segundo)
-    public Transform cameraTransform; // Referência para a câmera
-    public float gravity = -9.81f; // Força da gravidade
-    public float groundCheckDistance = 0.1f; // Distância para checar o chão
-    public float dashSpeed = 25f; // Velocidade do dash
-    public float dashDuration = 0.5f; // Duração do dash
-    public float maxShiftPressDuration = 0.5f; // Tempo máximo para ser considerado um dash
-    public float stamina;
+    public float moveSpeed = 5f; 
+    public float runSpeed = 8f; 
+    public float dashDistance = 5f; 
+    public float dashSpeed = 20f; 
+    public float stamina = 100f; 
+    public float staminaDrainRate = 10f; 
+    public float staminaRegenRate = 5f; 
 
-    private CharacterController characterController;
-    private Vector3 moveDirection = Vector3.zero;
-    private Vector3 velocity;
-    private bool isGrounded;
-    private bool isDashing = false;
-    private float shiftPressTime;
+    private Rigidbody rb; 
+    private Vector3 movement;
+    private bool isDashing = false; 
+    private bool isRunning = false; 
+
+    private Vector3 dashTargetPosition; 
+    private float dashTime; 
 
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true; 
     }
 
     void Update()
     {
-        // Verifica se o personagem está no chão
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveZ = Input.GetAxisRaw("Vertical");
 
-        if (isGrounded && velocity.y < 0)
-            velocity.y = -2f; // Garante que o personagem fique no chão
+        movement = new Vector3(moveX, 0f, moveZ).normalized;
 
-        // Captura a entrada do jogador no eixo X (horizontal) e Z (vertical)
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        // Obtém a direção da câmera (sem a inclinação no eixo Y)
-        Vector3 forward = cameraTransform.forward;
-        forward.y = 0f;
-        forward.Normalize();
-
-        Vector3 right = cameraTransform.right;
-        right.y = 0f;
-        right.Normalize();
-
-        // Combina as direções da câmera com as entradas do jogador
-        moveDirection = (forward * vertical + right * horizontal).normalized;
-
-        // Detecta o pressionamento do Shift
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (movement != Vector3.zero && !isDashing)
         {
-            shiftPressTime = Time.time;
+            Quaternion toRotation = Quaternion.LookRotation(movement, Vector3.up);
+            toRotation = Quaternion.Euler(0f, toRotation.eulerAngles.y, 0f);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime); 
         }
 
-        // Detecta se o Shift foi solto
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isRunning && !isDashing)
         {
-            float pressDuration = Time.time - shiftPressTime;
-
-            if (pressDuration <= maxShiftPressDuration)
-            {
-                StartCoroutine(Dash());
-            }
+            StartDash();
         }
 
-        // Verifica se o jogador está pressionando Shift
-        if (Input.GetKey(KeyCode.LeftShift) && !isDashing)
+        if (Input.GetKey(KeyCode.LeftShift) && !isDashing && stamina > 0)
         {
-            moveSpeed = 12f; // Aumenta a velocidade para corrida
+            isRunning = true;
+            movement *= runSpeed / moveSpeed; 
+            DrainStamina();
         }
-        else if (!isDashing)
+        else
         {
-            moveSpeed = 6f; // Velocidade normal
+            isRunning = false;
+            RegenerateStamina();
         }
-
-        // Movimenta o personagem
-        if (moveDirection.magnitude >= 0.1f && !isDashing)
-        {
-            // Calcula o ângulo de rotação desejado
-            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
-
-            // Rotaciona suavemente o personagem na direção do movimento
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref rotateSpeed, 0.1f);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-            // Aplica a movimentação ao CharacterController
-            Vector3 move = moveDirection * moveSpeed * Time.deltaTime;
-            characterController.Move(move);
-        }
-
-        // Aplica a gravidade
-        velocity.y += gravity * Time.deltaTime;
-        characterController.Move(velocity * Time.deltaTime);
     }
 
-    private IEnumerator Dash()
+    void FixedUpdate()
+    {
+        if (!isDashing)
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            ContinueDash();
+        }
+    }
+
+    void StartDash()
     {
         isDashing = true;
-        float startTime = Time.time;
 
-        while (Time.time < startTime + dashDuration)
+        dashTargetPosition = rb.position + movement * dashDistance;
+
+        dashTime = dashDistance / dashSpeed;
+    }
+
+    void ContinueDash()
+    {
+        if (dashTime > 0)
         {
-            characterController.Move(moveDirection * dashSpeed * Time.deltaTime);
-            yield return null;
+            rb.MovePosition(Vector3.MoveTowards(rb.position, dashTargetPosition, dashSpeed * Time.fixedDeltaTime));
+            dashTime -= Time.fixedDeltaTime;
         }
+        else
+        {
+            EndDash();
+        }
+    }
 
+    void EndDash()
+    {
         isDashing = false;
+    }
+
+    void DrainStamina()
+    {
+        stamina -= staminaDrainRate * Time.deltaTime;
+        if (stamina < 0)
+        {
+            stamina = 0;
+            isRunning = false;
+        }
+    }
+
+    void RegenerateStamina()
+    {
+        if (!isRunning && stamina < 100f)
+        {
+            stamina += staminaRegenRate * Time.deltaTime;
+            if (stamina > 100f) stamina = 100f;
+        }
     }
 }
