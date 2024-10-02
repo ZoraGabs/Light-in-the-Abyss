@@ -23,6 +23,7 @@ public class PlayerInventory : MonoBehaviour
     {
         Coins += amnt;
     }
+
     void OnCollisionEnter(Collision colli)
     {
         if (colli.gameObject.CompareTag("Enemy") && !Invencibility)
@@ -31,6 +32,8 @@ public class PlayerInventory : MonoBehaviour
         }
         else if (colli.gameObject.CompareTag("Coin"))
         {
+            GameObject objeto = colli.gameObject;
+            Destroy(objeto);
             ChangeMoney(1);
         }
     }
