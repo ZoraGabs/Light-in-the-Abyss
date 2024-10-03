@@ -1,27 +1,29 @@
+using System.Collections;
 using UnityEngine;
 
 public class CharacterControl : MonoBehaviour
 {
-    public float moveSpeed = 5f; 
-    public float runSpeed = 8f; 
-    public float dashDistance = 5f; 
-    public float dashSpeed = 20f; 
-    public float stamina = 100f; 
-    public float staminaDrainRate = 10f; 
-    public float staminaRegenRate = 5f; 
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float runSpeed = 8f;
+    [SerializeField] float dashDistance = 5f;
+    [SerializeField] float dashSpeed = 20f;
+    [SerializeField] float stamina = 100f;
+    [SerializeField] float staminaDrainRate = 10f;
+    [SerializeField] float staminaRegenRate = 5f;
+    [SerializeField] float dashStaminaCost = 20f;
+    [SerializeField] float dashHoldThreshold = 0.2f;
 
-    private Rigidbody rb; 
+    private Rigidbody rb;
     private Vector3 movement;
-    private bool isDashing = false; 
-    private bool isRunning = false; 
-
-    private Vector3 dashTargetPosition; 
-    private float dashTime; 
+    private bool isDashing = false;
+    private bool isRunning = false;
+    private Vector3 dashDirection;
+    private float holdTime = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true; 
+        rb.freezeRotation = true;
     }
 
     void Update()
@@ -29,69 +31,90 @@ public class CharacterControl : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
 
-        movement = new Vector3(moveX, 0f, moveZ).normalized;
+        movement = new Vector3(moveX, 0f, moveZ);
+        movement.Normalize();
 
         if (movement != Vector3.zero && !isDashing)
         {
             Quaternion toRotation = Quaternion.LookRotation(movement, Vector3.up);
             toRotation = Quaternion.Euler(0f, toRotation.eulerAngles.y, 0f);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime); 
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isRunning && !isDashing)
-        {
-            StartDash();
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.LeftShift) && !isDashing && stamina > 0)
         {
-            isRunning = true;
-            movement *= runSpeed / moveSpeed; 
+            holdTime += Time.deltaTime;
+
+            if (holdTime >= dashHoldThreshold)
+            {
+                isRunning = true;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            if (holdTime < dashHoldThreshold && !isDashing)
+            {
+                StartDash();
+            }
+            holdTime = 0f;
+            isRunning = false;
+        }
+
+        if (isRunning && stamina > 0)
+        {
+            movement *= runSpeed / moveSpeed;
             DrainStamina();
         }
-        else
+        else if (!Input.GetKey(KeyCode.LeftShift) || stamina <= 0)
         {
-            isRunning = false;
             RegenerateStamina();
         }
+        
     }
 
     void FixedUpdate()
     {
         if (!isDashing)
         {
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            Vector3 velocity = new Vector3(movement.x * moveSpeed, rb.velocity.y, movement.z * moveSpeed);
+            rb.velocity = velocity;
         }
-        else
+    }
+
+    private IEnumerator CountHoldTime()
+    {
+        holdTime = 0f;
+        while (Input.GetKey(KeyCode.LeftShift))
         {
-            ContinueDash();
+            holdTime += Time.deltaTime;
+            yield return null;
         }
     }
 
     void StartDash()
     {
-        isDashing = true;
-
-        dashTargetPosition = rb.position + movement * dashDistance;
-
-        dashTime = dashDistance / dashSpeed;
-    }
-
-    void ContinueDash()
-    {
-        if (dashTime > 0)
+        if (stamina >= dashStaminaCost)
         {
-            rb.MovePosition(Vector3.MoveTowards(rb.position, dashTargetPosition, dashSpeed * Time.fixedDeltaTime));
-            dashTime -= Time.fixedDeltaTime;
-        }
-        else
-        {
-            EndDash();
+            isDashing = true;
+            stamina -= dashStaminaCost;
+            dashDirection = movement;
+            StartCoroutine(Dash());
         }
     }
 
-    void EndDash()
+    private IEnumerator Dash()
     {
+        float dashTime = dashDistance / dashSpeed;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < dashTime)
+        {
+            rb.velocity = dashDirection * dashSpeed;
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
         isDashing = false;
     }
 
@@ -107,7 +130,7 @@ public class CharacterControl : MonoBehaviour
 
     void RegenerateStamina()
     {
-        if (!isRunning && stamina < 100f)
+        if (!isRunning && !isDashing && stamina < 100f)
         {
             stamina += staminaRegenRate * Time.deltaTime;
             if (stamina > 100f) stamina = 100f;
