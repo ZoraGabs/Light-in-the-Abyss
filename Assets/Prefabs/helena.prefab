@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6526303806614864798}
   - component: {fileID: 1806555133092665705}
   - component: {fileID: 2686535684589230396}
+  - component: {fileID: 3241886399316512706}
   m_Layer: 0
   m_Name: helena
   m_TagString: Untagged
@@ -121,12 +122,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  runSpeed: 8
+  runSpeed: 10
   dashDistance: 5
   dashSpeed: 20
   stamina: 100
   staminaDrainRate: 10
   staminaRegenRate: 5
+  dashStaminaCost: 20
+  dashHoldThreshold: 0.2
 --- !u!114 &1806555133092665705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,9 +152,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3381977946876749021}
   serializedVersion: 4
-  m_Mass: 30
+  m_Mass: 20
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -166,5 +169,17 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 36
   m_CollisionDetection: 0
+--- !u!114 &3241886399316512706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381977946876749021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f253bfe77700f840a84ac3a6aea4a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

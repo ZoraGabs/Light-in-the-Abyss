@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -35,9 +35,9 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.2
+  m_ReflectionIntensity: 0.186
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 1939113307}
+  m_Sun: {fileID: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -190,9 +190,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4035289}
   - component: {fileID: 4035290}
-  m_Layer: 0
+  - component: {fileID: 4035292}
+  - component: {fileID: 4035291}
+  m_Layer: 6
   m_Name: Point Light (6)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +226,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -274,6 +276,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &4035291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &4035292
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035288}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &26026551
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,9 +319,11 @@ GameObject:
   m_Component:
   - component: {fileID: 26026552}
   - component: {fileID: 26026553}
-  m_Layer: 0
+  - component: {fileID: 26026555}
+  - component: {fileID: 26026554}
+  m_Layer: 6
   m_Name: Point Light (9)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -318,7 +355,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -368,6 +405,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &26026554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26026551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &26026555
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26026551}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &34539818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1818,9 +1888,11 @@ GameObject:
   m_Component:
   - component: {fileID: 273694931}
   - component: {fileID: 273694932}
-  m_Layer: 0
+  - component: {fileID: 273694934}
+  - component: {fileID: 273694933}
+  m_Layer: 6
   m_Name: Point Light (8)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,7 +1924,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -1902,6 +1974,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &273694933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273694930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &273694934
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273694930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &278706385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2139,9 +2244,11 @@ GameObject:
   m_Component:
   - component: {fileID: 306419064}
   - component: {fileID: 306419065}
-  m_Layer: 0
+  - component: {fileID: 306419067}
+  - component: {fileID: 306419066}
+  m_Layer: 6
   m_Name: Point Light (3)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2173,7 +2280,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -2223,6 +2330,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &306419066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306419063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &306419067
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306419063}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: -0.14871015, y: 0, z: 0}
 --- !u!1 &312935256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b9d4f3c5adc05b447b337555c4a1bf2d, type: 3}
@@ -2455,9 +2595,11 @@ GameObject:
   m_Component:
   - component: {fileID: 352496242}
   - component: {fileID: 352496243}
-  m_Layer: 0
+  - component: {fileID: 352496245}
+  - component: {fileID: 352496244}
+  m_Layer: 6
   m_Name: Point Light (4)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2489,7 +2631,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -2539,6 +2681,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &352496244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352496241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &352496245
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352496241}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &376929673
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,9 +2724,11 @@ GameObject:
   m_Component:
   - component: {fileID: 376929674}
   - component: {fileID: 376929675}
-  m_Layer: 0
+  - component: {fileID: 376929677}
+  - component: {fileID: 376929676}
+  m_Layer: 6
   m_Name: Point Light (11)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2583,7 +2760,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -2633,6 +2810,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &376929676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376929673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &376929677
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376929673}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &379442355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3132,9 +3342,11 @@ GameObject:
   m_Component:
   - component: {fileID: 447638100}
   - component: {fileID: 447638101}
-  m_Layer: 0
+  - component: {fileID: 447638103}
+  - component: {fileID: 447638102}
+  m_Layer: 6
   m_Name: Point Light (10)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3166,7 +3378,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -3216,6 +3428,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &447638102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447638099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &447638103
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447638099}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &449861095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b9d4f3c5adc05b447b337555c4a1bf2d, type: 3}
@@ -7742,9 +7987,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1245409003}
   - component: {fileID: 1245409004}
-  m_Layer: 0
+  - component: {fileID: 1245409006}
+  - component: {fileID: 1245409005}
+  m_Layer: 6
   m_Name: Point Light (7)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7776,7 +8023,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -7826,6 +8073,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1245409005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245409002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1245409006
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245409002}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1263444104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10728,10 +11008,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2686535684589230396, guid: 4e1e81fb0345f874b8ed52151fa60761, type: 3}
-      propertyPath: m_Drag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2686535684589230396, guid: 4e1e81fb0345f874b8ed52151fa60761, type: 3}
       propertyPath: m_Mass
       value: 20
       objectReference: {fileID: 0}
@@ -10743,9 +11019,9 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 36
       objectReference: {fileID: 0}
-    - target: {fileID: 2686535684589230396, guid: 4e1e81fb0345f874b8ed52151fa60761, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
+    - target: {fileID: 3241886399316512706, guid: 4e1e81fb0345f874b8ed52151fa60761, type: 3}
+      propertyPath: algasLayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 3381977946876749021, guid: 4e1e81fb0345f874b8ed52151fa60761, type: 3}
       propertyPath: m_Name
@@ -12575,9 +12851,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2081930067}
   - component: {fileID: 2081930068}
-  m_Layer: 0
+  - component: {fileID: 2081930070}
+  - component: {fileID: 2081930069}
+  m_Layer: 6
   m_Name: Point Light (5)
-  m_TagString: Untagged
+  m_TagString: Algas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12609,7 +12887,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5939406, g: 0.4292453, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 0.5
   m_Range: 20
   m_SpotAngle: 66
   m_InnerSpotAngle: 3
@@ -12659,6 +12937,39 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2081930069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081930066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62621036bea51f14d999ba35dbcc1085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &2081930070
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081930066}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2086301054
 PrefabInstance:
   m_ObjectHideFlags: 0
