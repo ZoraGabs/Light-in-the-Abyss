@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterControl : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class CharacterControl : MonoBehaviour
     [SerializeField] float dashDistance = 5f;
     [SerializeField] float dashSpeed = 20f;
     [SerializeField] float stamina = 100f;
+    [SerializeField] float Max_stamina = 100f;
     [SerializeField] float staminaDrainRate = 10f;
     [SerializeField] float staminaRegenRate = 5f;
     [SerializeField] float dashStaminaCost = 20f;
@@ -20,10 +22,20 @@ public class CharacterControl : MonoBehaviour
     private Vector3 dashDirection;
     private float holdTime = 0f;
 
+    public Image fillImage; 
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        AtualizarBarraDeStamina();
+    }
+
+    private void AtualizarBarraDeStamina()
+    {
+        float fillAmount = stamina / Max_stamina;
+
+        fillImage.fillAmount = fillAmount;
     }
 
     void Update()
@@ -126,6 +138,7 @@ public class CharacterControl : MonoBehaviour
             stamina = 0;
             isRunning = false;
         }
+        AtualizarBarraDeStamina();
     }
 
     void RegenerateStamina()
@@ -135,5 +148,6 @@ public class CharacterControl : MonoBehaviour
             stamina += staminaRegenRate * Time.deltaTime;
             if (stamina > 100f) stamina = 100f;
         }
+        AtualizarBarraDeStamina();
     }
 }
