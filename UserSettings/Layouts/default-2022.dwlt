@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 45
+  controlID: 56
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 57
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 47
+  controlID: 58
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -324,7 +324,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/3D_models/Environment/caverna
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -332,16 +332,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/3D_models/Environment/caverna
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\projetos\Light in the abyss\Light-in-the-Abyss
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68610000
-    m_LastClickedID: 24936
-    m_ExpandedIDs: 00000000506100005261000054610000646100009661000000ca9a3bffffff7f
+    m_SelectedIDs: 3e620000
+    m_LastClickedID: 25150
+    m_ExpandedIDs: 00000000fa610000fc610000fe6100000e6200004062000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -369,7 +369,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000506100005261000054610000
+    m_ExpandedIDs: 00000000fa610000fc610000fe610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000105c0000ce5b0000467000008c9c00001a1f0000421f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -508,10 +508,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 864}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d6f6ffff32fbffffba630000
+      m_ExpandedIDs: 32fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -865,9 +865,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -85.65783, y: -245.55038, z: 332.54367}
+    m_Target: {x: 52.839504, y: -540.27625, z: 449.55927}
     speed: 2
-    m_Value: {x: -85.65783, y: -245.55038, z: 332.54367}
+    m_Value: {x: 52.839504, y: -540.27625, z: 449.55927}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -913,13 +913,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.27832806, y: 0.10580025, z: -0.03080612, w: -0.9541934}
+    m_Target: {x: 0.40377003, y: 0.059473433, z: -0.026349409, w: 0.9125954}
     speed: 2
-    m_Value: {x: -0.2782684, y: 0.107226364, z: -0.031222105, w: -0.9539886}
+    m_Value: {x: 0.4051198, y: 0.059431102, z: -0.026437389, w: 0.9119468}
   m_Size:
-    m_Target: 279.99658
+    m_Target: 392.41324
     speed: 2
-    m_Value: 293.19012
+    m_Value: 410.9039
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -937,7 +937,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.31440085, y: 0.00088048493, z: -0.00024858819, w: -0.9493378}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
