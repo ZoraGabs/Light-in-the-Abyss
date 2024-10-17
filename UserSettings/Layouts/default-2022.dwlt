@@ -93,7 +93,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 311
+    width: 284
     height: 539
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -267,9 +267,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 311
+    x: 284
     y: 0
-    width: 983
+    width: 1010
     height: 539
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -324,7 +324,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3D_models/Environment/caverna
+    - Assets/3D_models/Environment/paredes_algas
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -332,16 +332,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3D_models/Environment/caverna
+  - Assets/3D_models/Environment/paredes_algas
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\projetos\Light in the abyss\Light-in-the-Abyss
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e01e0000
-    m_LastClickedID: 7904
-    m_ExpandedIDs: 00000000286200002a6200002c6200003a6200006a62000000ca9a3bffffff7f
+    m_SelectedIDs: 68e10000
+    m_LastClickedID: 57704
+    m_ExpandedIDs: 00000000026200000462000006620000146200004662000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -369,7 +369,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000286200002a6200002c620000
+    m_ExpandedIDs: 00000000026200000462000006620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000105c0000ce5b0000467000008c9c00001a1f0000421f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -494,7 +494,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 310
+    width: 283
     height: 518
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -508,10 +508,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 767}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 56faffffc85f0000
+      m_ExpandedIDs: 1877feffb878feff468efeffde8ffeffc290feffd492feff7a9afeff249cfeff16a4feffc0a5feff3ec0feffd6c1feff94f5ffff06f7ffff26fbffff96690000f06900000e6a0000e86a0000326b0000106c0000206d00004a6d0000906d00002a6f0000326f000092d90000a02f0100304b0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -555,9 +555,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 311
+    x: 284
     y: 73
-    width: 981
+    width: 1008
     height: 518
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -865,9 +865,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -112.93168, y: -568.8734, z: 551.1177}
+    m_Target: {x: -111.80994, y: -1374.8059, z: 1085.6205}
     speed: 2
-    m_Value: {x: -112.93168, y: -568.8734, z: 551.1177}
+    m_Value: {x: -111.80994, y: -1374.8059, z: 1085.6205}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -913,13 +913,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.37181568, y: -0.068999656, z: 0.027676212, w: 0.92537856}
+    m_Target: {x: -0.42313486, y: 0.049567368, z: -0.022934146, w: -0.9045001}
     speed: 2
-    m_Value: {x: 0.3717553, y: -0.07038416, z: 0.028232504, w: 0.9252281}
+    m_Value: {x: -0.42306897, y: 0.05092033, z: -0.023567094, w: -0.9043585}
   m_Size:
-    m_Target: 457.71942
+    m_Target: 984.0046
     speed: 2
-    m_Value: 479.28735
+    m_Value: 941.63116
   m_Ortho:
     m_Target: 0
     speed: 2

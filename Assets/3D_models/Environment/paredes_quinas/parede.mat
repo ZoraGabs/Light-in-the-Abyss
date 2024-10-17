@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: parede
-  m_Shader: {fileID: 4800000, guid: 691b69f531e69b94684371faaf55dfe2, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9a7f53dd1c6d6c443ad664e8f70520cc, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorTex:
-        m_Texture: {fileID: 2800000, guid: 065b91d5034b40349a2add4fcda50dfb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 859be6268797c8a45af5c4ad7e36e955, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
-        m_Texture: {fileID: 2800000, guid: 41866ea2d8e049e47a0cf1691185d00b, type: 3}
+        m_Texture: {fileID: 2800000, guid: ea6cc774fdc03554bac56f32e8c83b8b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -68,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SandTex:
-        m_Texture: {fileID: 2800000, guid: 2ee8578c414391d45b79f54c01fbda12, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4b589027d1d28fc44884dd3d8593e6d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
